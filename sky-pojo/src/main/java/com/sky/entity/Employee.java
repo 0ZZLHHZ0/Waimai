@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Employee implements Serializable {
+public class    Employee implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
