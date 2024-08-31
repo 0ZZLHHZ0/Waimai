@@ -30,4 +30,5 @@ public class DishController {
         dishService.saveWithFlavor(dishDTO);
         return Result.success();
     }
+    //todo 菜品分页查询待做
 }
