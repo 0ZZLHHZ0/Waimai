@@ -8,6 +8,12 @@
             values
         (#{name}, #{categoryId}, #{price},#{image},#{description},#{createTime},#{updateTime},#{createUser},#{updateUser},#{status})
     </insert>
+    <delete id="deleteByIds">
+        delete from dish where id in 
+        <foreach collection="ids" item="id" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
     <select id="pageQuery" resultType="com.sky.vo.DishVO">
         SELECT
             d.*,
